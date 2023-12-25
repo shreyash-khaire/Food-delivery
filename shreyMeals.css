@@ -1,0 +1,250 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* navigation bar  */
+.nav {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+.nav::before {
+    content: '';
+    background-color: rgb(105, 105, 105);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+/* elements inside navigation bar  */
+#logo img {
+    height: 84px;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    margin-left: 10px;
+    font-family: cursive;
+}
+
+.nav div ul a {
+    font-size: 1.4rem;
+    display: block;
+    text-decoration: none;
+    margin: 0px 10px;
+    color: rgb(255, 255, 255);
+}
+
+.nav div ul a:hover {
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+}
+
+.nav .image {
+    margin-left: 500px;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    text-align: right;
+}
+
+.nav img {
+    height: 56px;
+}
+
+.nav img:hover {
+    cursor: pointer;
+    block-size: 64px;
+}
+
+/* Home section  */
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 250px;
+    height: 455px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('https://media.istockphoto.com/id/1301565375/photo/paleo-diet-healthy-food-background.jpg?b=1&s=170667a&w=0&k=20&c=JyZorfsSyyL3bANRR2HrY4CUMFH8avqs3lvm0YlU8bU=')no-repeat center center/cover;
+    height: 550px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.7rem;
+    padding: 0px 0px;
+}
+
+/* service section  */
+.services::before {
+    content: '';
+    position: absolute;
+    background: url('https://images.unsplash.com/photo-1517433367423-c7e5b0f35086?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGZvb2QlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60')no-repeat center center/cover;
+    height: 85%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.76;
+}
+
+#services {
+    display: flex;
+    margin: 1% 7%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#services-container h1 {
+    padding-top: 50px;
+}
+
+#services .box {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 16px 16px;
+    background-color: aliceblue;
+    margin: 20px 2px;
+    margin-top: 32px;
+}
+
+#services .box img {
+    height: auto;
+    margin: auto;
+    display: block;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#services .box p {
+    font-size: 1.2rem;
+}
+
+/* prime clients section  */
+.clients {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#primeclients h1 {
+    margin-top: 100px;
+}
+
+#primeclients img {
+    height: 256px;
+}
+
+/* contact us section  */
+#contact {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact::before {
+    content: '';
+    position: absolute;
+    background: url('https://cdn.pixabay.com/photo/2017/12/02/14/38/contact-us-2993000__340.jpg')no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.contact textarea,
+.contact input {
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.contact form {
+    width: 40%;
+}
+
+.contact label {
+    font-size: 1.3rem;
+}
+
+.contact button {
+    display: block;
+    margin: 20px auto;
+    margin-bottom: 70px;
+}
+
+/* footer  */
+footer {
+    font-family: cursive;
+    color: white;
+    background-color: black;
+    font-size: 1.3rem;
+}
+
+footer span:hover {
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+/* common classes/id  */
+.primary-heading {
+    padding: 20px;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.secondary-heading {
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn {
+    font-size: 1rem;
+    margin: 20px 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn:hover {
+    font-weight: 500;
+}
+
+.center {
+    text-align: center;
+}
